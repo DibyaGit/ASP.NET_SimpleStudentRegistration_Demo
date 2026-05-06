@@ -1,0 +1,16 @@
+﻿@page
+@model ASP_DAY_18.Pages.IndexModel
+
+<h2>Student Registration</h2>
+
+<form method="post">
+    <label>Enter your name:</label>
+    <input type="text" asp-for="StudentName" required />
+    
+    <button type="submit">Register</button>
+</form>
+
+@if (Model.Message != null)
+{
+    <h3 style="color: green;">@Model.Message</h3>
+}
